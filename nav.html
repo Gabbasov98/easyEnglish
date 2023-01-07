@@ -1,0 +1,174 @@
+<!DOCTYPE html> <html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Main
+        </a>
+        <a href="index2.html" style="display: block; margin-bottom: 20px;">
+            Main (Auth)
+        </a>
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            Contacts
+        </a>
+
+
+
+
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="reg">
+            Registration
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="login">
+            Sign in
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="forgotPass">
+            Forgot password?
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="subscription">
+            Сancel subscription?
+        </button>
+
+    </div>
+
+    <div class="m-modal" id="reg">
+    <div class="m-modal__dialog">
+        <div class="m-modal__title">
+            Registration
+        </div>
+        <form class="m-modal__form">
+            <fieldset class="fg fg2">
+                <input type="email" placeholder="Name">
+                <img src="img/email.svg" alt="">
+            </fieldset>
+            <fieldset class="fg fg2">
+                <input type="password" placeholder="Password">
+                <img src="img/password.svg" alt="">
+            </fieldset>
+            <button class="m-modal__btn m-btn m-btn-primary">
+                START NOW
+            </button>
+        </form>
+        <div class="m-modal__hint">
+            By registering, you accept the
+            <a href="">Agreement</a>
+        </div>
+    </div>
+</div>
+
+<div class="m-modal" id="login">
+    <div class="m-modal__dialog">
+        <div class="m-modal__title">
+            Sign in
+        </div>
+        <form class="m-modal__form">
+            <fieldset class="fg fg2">
+                <input type="email" placeholder="Name">
+                <img src="img/email.svg" alt="">
+            </fieldset>
+            <fieldset class="fg fg2">
+                <input type="password" placeholder="Password">
+                <img src="img/password.svg" alt="">
+            </fieldset>
+            <button type="button" class="m-modal__forgot" data-modal="forgotPass">
+                Forgot password
+            </button>
+            <button class="m-modal__btn m-btn m-btn-primary">
+                TO COME IN
+            </button>
+        </form>
+        <div class="m-modal__subtitle">OR LOGIN VIA SOCIAL NETWORKS</div>
+        <div class="m-modal__socials">
+            <a href="" class="m-modal__social m-modal__social--fb">
+                <img src="img/social.webp" alt="">
+                <span>Facebook</span>
+            </a>
+            <a href="" class="m-modal__social m-modal__social--g">
+                <img src="img/social2.webp" alt="">
+                <span>Google</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="m-modal" id="forgotPass">
+    <div class="m-modal__dialog">
+        <div class="m-modal__title">
+            Forgot password?
+        </div>
+        <form class="m-modal__form">
+            <fieldset class="fg fg2">
+                <input type="email" placeholder="Name">
+                <img src="img/email.svg" alt="">
+            </fieldset>
+            <button class="m-modal__btn m-btn m-btn-primary">
+                REMIND PASSWORD
+            </button>
+        </form>
+        <div class="m-modal__hint">
+            if you remember your password
+            <button data-modal="login">log in</button>
+        </div>
+        <div class="m-modal__subtitle">OR LOGIN VIA SOCIAL NETWORKS</div>
+        <div class="m-modal__socials">
+            <a href="" class="m-modal__social m-modal__social--fb">
+                <img src="img/social.webp" alt="">
+                <span>Facebook</span>
+            </a>
+            <a href="" class="m-modal__social m-modal__social--g">
+                <img src="img/social2.webp" alt="">
+                <span>Google</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="m-modal m-modal-sub" id="subscription">
+    <div class="m-modal__dialog">
+        <div class="m-modal__title">
+            Сancel your current subscription?
+        </div>
+        <button class="m-modal__btn gray-text m-btn m-btn-primary-outline">
+            CANCEL SUBSCRIPTION
+        </button>
+        <div class="m-modal__or">
+            OR
+        </div>
+        <button class="m-modal__btn m-btn m-btn-primary">
+            STAY WITH US
+        </button>
+    </div>
+</div>
+
+
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
