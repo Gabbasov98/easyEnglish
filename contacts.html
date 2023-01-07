@@ -36,10 +36,10 @@
 
         <div class="header__action">
             
-            <button class="header__login m-btn m-btn-primary-outline">
+            <button class="header__login m-btn m-btn-primary-outline" data-modal="login">
                 login
             </button>
-            <button class="header__start m-btn m-btn-primary">
+            <button class="header__start m-btn m-btn-primary" data-modal="reg">
                 Start now
             </button>
             
@@ -107,7 +107,95 @@
         </footer>
     </div>
 
-    <script src="js/libs.min.js"></script>
+    <div class="m-modal" id="reg">
+    <div class="m-modal__dialog">
+        <div class="m-modal__title">
+            Registration
+        </div>
+        <form class="m-modal__form">
+            <fieldset class="fg fg2">
+                <input type="email" placeholder="E-mail">
+                <img src="img/email.svg" alt="">
+            </fieldset>
+            <fieldset class="fg fg2">
+                <input type="password" placeholder="Password">
+                <img src="img/password.svg" alt="">
+            </fieldset>
+            <button class="m-modal__btn m-btn m-btn-primary">
+                START NOW
+            </button>
+        </form>
+        <div class="m-modal__hint">
+            By registering, you accept the
+            <a href="">Agreement</a>
+        </div>
+    </div>
+</div>
+
+<div class="m-modal" id="login">
+    <div class="m-modal__dialog">
+        <div class="m-modal__title">
+            Sign in
+        </div>
+        <form class="m-modal__form">
+            <fieldset class="fg fg2">
+                <input type="email" placeholder="E-mail">
+                <img src="img/email.svg" alt="">
+            </fieldset>
+            <fieldset class="fg fg2">
+                <input type="password" placeholder="Password">
+                <img src="img/password.svg" alt="">
+            </fieldset>
+            <button type="button" class="m-modal__forgot" data-modal="forgotPass">
+                Forgot password
+            </button>
+            <button class="m-modal__btn m-btn m-btn-primary">
+                TO COME IN
+            </button>
+        </form>
+    </div>
+</div>
+
+<div class="m-modal" id="forgotPass">
+    <div class="m-modal__dialog">
+        <div class="m-modal__title">
+            Forgot password?
+        </div>
+        <form class="m-modal__form">
+            <fieldset class="fg fg2">
+                <input type="email" placeholder="E-mail">
+                <img src="img/email.svg" alt="">
+            </fieldset>
+            <button class="m-modal__btn m-btn m-btn-primary">
+                REMIND PASSWORD
+            </button>
+        </form>
+        <div class="m-modal__hint">
+            if you remember your password
+            <button data-modal="login">log in</button>
+        </div>
+    </div>
+</div>
+
+<div class="m-modal m-modal-sub" id="subscription">
+    <div class="m-modal__dialog">
+        <div class="m-modal__title">
+            Сancel your current subscription?
+        </div>
+        <button class="m-modal__btn gray-text m-btn m-btn-primary-outline">
+            CANCEL SUBSCRIPTION
+        </button>
+        <div class="m-modal__or">
+            OR
+        </div>
+        <button class="m-modal__btn m-btn m-btn-primary">
+            STAY WITH US
+        </button>
+    </div>
+</div>
+
+
+<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
 
 </body>
